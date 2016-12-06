@@ -1,0 +1,46 @@
+	inc 1
+	jp	main
+myfunc:
+	libp	-4
+	libp3	-3
+	mts
+	libp	-2
+	mts
+	add
+	stm
+	ret
+main:
+	push	0
+	pushr	1.0
+	stm
+L000:
+	push	0
+	mts
+	pushr	5.0
+	ls		
+	jf L001
+	inc	1
+	push	0
+	mts
+	push	0
+	mts
+	pushr	1.0
+	add
+	savebp
+	inc	0
+	call myfunc
+	dec	0
+	rstrbp
+	dec	2
+	output
+	push	0
+	push	0
+	mts
+	pushr	1.0
+	add
+	stm
+	jp	L000
+L001:
+	halt
+	end
+

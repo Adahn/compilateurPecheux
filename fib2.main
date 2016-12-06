@@ -1,0 +1,17 @@
+program fib;
+
+var i;	// variable globale
+
+function fibo(n);	// fibo = nom d'une fonction // n = parametre de fonction
+var p, p1, p2;		// variables locales
+begin
+	p=1.0;
+	if n<3 then
+		return n
+	else
+        	return fibo(n-1)+fibo(n-2);
+end;
+
+begin
+	write fibo(n);
+end.

@@ -1,0 +1,89 @@
+digraph {
+	A000 [label="reserve_space"]
+	A001 [label="fibonacci"]
+	A002 [label="n"]
+	A003 [label="3.000000"]
+	A004 [label="<"]
+	A005 [label="fibonacci"]
+	A006 [label="n"]
+	A007 [label="return"]
+	A008 [label="fibonacci"]
+	A009 [label="fibonacci"]
+	A010 [label="n"]
+	A011 [label="1.000000"]
+	A012 [label="-"]
+	A013 [label="appel fonc"]
+	A014 [label="fibonacci"]
+	A015 [label="n"]
+	A016 [label="2.000000"]
+	A017 [label="-"]
+	A018 [label="appel fonc"]
+	A019 [label="+"]
+	A020 [label="return"]
+	A021 [label="if"]
+	A022 [label="def_fonction"]
+	A023 [label="i"]
+	A024 [label="1.000000"]
+	A025 [label="="]
+	A026 [label="i"]
+	A027 [label="10.000000"]
+	A028 [label="<"]
+	A029 [label="fibonacci"]
+	A030 [label="i"]
+	A031 [label="appel fonc"]
+	A032 [label="write"]
+	A033 [label="i"]
+	A034 [label="i"]
+	A035 [label="1.000000"]
+	A036 [label="+"]
+	A037 [label="="]
+	A038 [label=";"]
+	A039 [label="while"]
+	A040 [label=";"]
+	A041 [label="main"]
+	A042 [label=";"]
+	A043 [label=";"]
+	A043 -> A000
+	A043 -> A042
+	A042 -> A022
+	A042 -> A041
+	A022 -> A001
+	A022 -> A021
+	A021 -> A004
+	A021 -> A007
+	A021 -> A020
+	A004 -> A002
+	A004 -> A003
+	A007 -> A005
+	A007 -> A006
+	A020 -> A008
+	A020 -> A019
+	A019 -> A013
+	A019 -> A018
+	A013 -> A009
+	A013 -> A012
+	A012 -> A010
+	A012 -> A011
+	A018 -> A014
+	A018 -> A017
+	A017 -> A015
+	A017 -> A016
+	A041 -> A040
+	A040 -> A025
+	A040 -> A039
+	A025 -> A023
+	A025 -> A024
+	A039 -> A028
+	A039 -> A038
+	A028 -> A026
+	A028 -> A027
+	A038 -> A032
+	A038 -> A037
+	A032 -> A031
+	A031 -> A029
+	A031 -> A030
+	A037 -> A033
+	A037 -> A036
+	A036 -> A034
+	A036 -> A035
+}
